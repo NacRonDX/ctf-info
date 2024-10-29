@@ -1,3 +1,15 @@
-site_name: CTF info
+site_name: CTF_info
 theme:
-  name: material
+  name: dracula
+plugins:
+  - obsidian-interactive-graph
+  - obsidian-bridge
+markdown_extensions:
+  - obsidian_media_mkdocs
+extra_javascript:
+  - https://fastly.jsdelivr.net/npm/jquery/dist/jquery.min.js
+  - https://fastly.jsdelivr.net/npm/echarts/dist/echarts.min.js
+  - assets/javascripts/interactive_graph.js
+
+extra_css:
+  - assets/stylesheets/interactive_graph.css
