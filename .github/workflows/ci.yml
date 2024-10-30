@@ -27,4 +27,5 @@ jobs:
       - run: pip install mkdocs-dracula-theme
       - run: pip install mkdocs-obsidian-bridge
       - run: pip install mkdocs-obsidian-interactive-graph-plugin
+      - run: pip install mkdocs-obsidian-support-plugin
       - run: mkdocs gh-deploy --force
