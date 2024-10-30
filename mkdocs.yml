@@ -5,6 +5,7 @@ theme:
 plugins:
   - obsidian-interactive-graph
   - obsidian-bridge
+  - obsidian-support
 markdown_extensions:
   - obsidian_media_mkdocs
 extra_javascript:
