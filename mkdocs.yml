@@ -1,4 +1,5 @@
 site_name: CTF_info
+site_url: https://nacrondx.github.io/ctf-info
 theme:
   name: dracula
 plugins:
