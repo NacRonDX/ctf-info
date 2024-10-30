@@ -1,0 +1,631 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+        <title>Dumpfiles - CTF_info</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        
+        <link rel="canonical" href="https://nacrondx.github.io/ctf-info/Wiki/Volatility%20Plugins/dumpfiles/">
+        
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="../../../assets/css/darcula-highlight.min.css">
+
+        <link rel="stylesheet" href="../../../assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../../assets/css/dracula-ui.min.css">
+        <link rel="stylesheet" href="../../../assets/css/mkdocs.min.css">
+            <link href="../../../assets/stylesheets/interactive_graph.css" rel="stylesheet">
+
+        
+            <link  rel="icon" type="image/x-icon" href="../../../assets/img/favicon.ico">
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+                <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+
+<body class="drac-bg-black-secondary drac-text-grey-ternary drac-text drac-scrollbar-purple">
+
+    <main class="d-flex">
+
+        <!-- block sidebar -->
+            <nav id="sidebar" class="sidebar drac-bg-black">
+    <div class="custom-menu">
+        <button type="button" id="sidebarCollapse" class="btn btn-primary">
+            <i class="fa fa-bars"></i>
+            <span class="sr-only">Menu</span>
+        </button>
+    </div>
+
+    <div class="p-4">
+        
+
+        <div class="drac-text-center">
+            
+                <span class="drac-text drac-line-height drac-text-white">CTF_info</span>
+            
+        </div>
+
+        <div class="drac-box flex-column">
+            <ul class="dot-ul">
+                <li><div class="dot-li drac-bg-cyan"></div></li>
+                <li><div class="dot-li drac-bg-green"></div></li>
+                <li><div class="dot-li drac-bg-orange"></div></li>
+                <li><div class="dot-li drac-bg-pink"></div></li>
+                <li><div class="dot-li drac-bg-purple"></div></li>
+                <li><div class="dot-li drac-bg-red"></div></li>
+                <li><div class="dot-li drac-bg-yellow"></div></li>
+            </ul>
+        </div>
+
+        <hr class="drac-divider" />
+
+        <!-- block menu -->
+        <ul class="mb-5 drac-list drac-list-none">
+            
+            <li class="drac-box">
+                <a href="../../.."
+                    class="
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+                    Home
+                </a>
+            </li>
+            <li class="drac-box">
+                <a href="../../../Tools/"
+                    class="
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+                    Tools
+                </a>
+            </li>
+            <li class="drac-box">
+                <a href="../../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#ctfs-collapse" aria-expanded="false">
+                    CTFs
+                </a>
+                <div class="collapse" id="ctfs-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="#" class="
+            drac-anchor-secondary btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+            data-bs-toggle="collapse" data-bs-target="#heroctf-v6---2024-collapse" aria-expanded="false">
+            HeroCTF v6   2024
+        </a>
+
+        <div class="collapse" id="heroctf-v6---2024-collapse">
+            <ul class="mb-5 drac-list drac-list-none">
+                    
+    <li class="drac-box-ternary">
+        <a href="#" class="
+            drac-anchor-secondary btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+            data-bs-toggle="collapse" data-bs-target="#steganography-collapse" aria-expanded="false">
+            Steganography
+        </a>
+
+        <div class="collapse" id="steganography-collapse">
+            <ul class="mb-5 drac-list drac-list-none">
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../CTFs/HeroCTF%20v6%20-%202024/Steganography/LSD3/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            LSD3
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../CTFs/HeroCTF%20v6%20-%202024/Steganography/Zipper/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Zipper
+        </a>
+    </li>
+            </ul>
+        </div>
+    </li>
+            </ul>
+        </div>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#templates-collapse" aria-expanded="false">
+                    Templates
+                </a>
+                <div class="collapse" id="templates-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../../Templates/Write%20up%20template/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Write up template
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../../.."
+                    class=" active 
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#wiki-collapse" aria-expanded="false">
+                    Wiki
+                </a>
+                <div class="collapse" id="wiki-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Audacity/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Audacity
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Binwalk/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Binwalk
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Burp%20Suite/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Burp Suite
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Cookies/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Cookies
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Cross-Site%20Scripting%20%28XSS%29/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Cross Site Scripting (XSS)
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Deep%20Sound/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Deep Sound
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Exiftool/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Exiftool
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Fcrackzip/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Fcrackzip
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../File%20Magic%20Numbers/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            File Magic Numbers
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../File%20upload%20vulnerability/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            File upload vulnerability
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../HowToLogin/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            HowToLogin
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../ImageMagick/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            ImageMagick
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../John%20The%20Ripper/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            John The Ripper
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Jsteg/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Jsteg
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Local%20File%20Inclusion/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Local File Inclusion
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../PDFCrack/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            PDFCrack
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Pngcheck/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Pngcheck
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../SQL%20Injection/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            SQL Injection
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Same%20Origin%20Policy/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Same Origin Policy
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Stegcracker/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Stegcracker
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Steghide/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Steghide
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Stegsnow/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Stegsnow
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Strings/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Strings
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Volatility/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Volatility
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../WFuzz/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            WFuzz
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Wireshark/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Wireshark
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Zbarimg/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Zbarimg
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Zipography/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Zipography
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Zsteg/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Zsteg
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="#" class="
+            drac-anchor-secondary btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+            data-bs-toggle="collapse" data-bs-target="#volatility-plugins-collapse" aria-expanded="false">
+            Volatility Plugins
+        </a>
+
+        <div class="collapse" id="volatility-plugins-collapse">
+            <ul class="mb-5 drac-list drac-list-none">
+                    
+    <li class="drac-box-ternary">
+        <a href="../cmdscan/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Cmdscan
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../consoles/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Consoles
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="./"
+            class=" active 
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Dumpfiles
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../envars/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Envars
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../filescan/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Filescan
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../hashdump/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Hashdump
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../imageinfo/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Imageinfo
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../pslist/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Pslist
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../pstree/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Pstree
+        </a>
+    </li>
+            </ul>
+        </div>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="#" class="
+            drac-anchor-secondary btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+            data-bs-toggle="collapse" data-bs-target="#scripts-collapse" aria-expanded="false">
+            Scripts
+        </a>
+
+        <div class="collapse" id="scripts-collapse">
+            <ul class="mb-5 drac-list drac-list-none">
+                    
+    <li class="drac-box-ternary">
+        <a href="../../scripts/Hidded%20data%20in%20PNG%20IDAT%20chunk/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Hidded data in PNG IDAT chunk
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../scripts/Interactive%20shell%20php/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Interactive shell php
+        </a>
+    </li>
+            </ul>
+        </div>
+    </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        <!-- endblock -->
+    </div>
+</nav>
+        <!-- endblock -->
+
+        <nav class="divider drac-bg-purple-cyan"></nav>
+
+        <div class="content">
+            <!-- block header -->
+                <header>
+    <nav class="navbar navbar-expand-xl drac-bg-purple">
+        <div class="container-fluid">
+            
+            <button class="navbar-toggler w-100 text-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMenu"
+                aria-controls="navbarsMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse flex-column ml-auto" id="navbarsMenu">
+                <ul class="navbar-nav text-md-center">
+
+                    <!-- block preview -->
+                    <li class="nav-item">
+                            
+        <div class="container">
+            <div class="row row-preview">
+                <div class="col">
+                    <a href="../consoles/"
+                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="../envars/"
+                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover" style="padding-left: 3%;">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block search -->
+                    <li class="nav-item">
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block source -->
+                    <li class="nav-item">
+                        
+                    </li>
+                    <!--  endblock -->
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</header>
+            <!-- endblock -->
+
+            <!-- block content -->
+                <section class="p-md-5 section-content">
+    <article>
+        <p><p>An important concept that everyone who has worked on the study of Operating Systems is the idea of caching. Files are cached in memory for system performance as they are accessed and used. This makes cache an important source for collecting valuable info.</p>
+<p>The dumpfiles plugin has many options. Let us have a look at what they are:</p>
+<pre><code>-r REGEX, --regex=REGEX
+                        Dump files matching REGEX
+  -i, --ignore-case     Ignore case in pattern match
+  -o OFFSET, --offset=OFFSET
+                        Dump files for Process with physical address OFFSET
+  -Q PHYSOFFSET, --physoffset=PHYSOFFSET
+                        Dump File Object at physical address PHYSOFFSET
+  -D DUMP_DIR, --dump-dir=DUMP_DIR
+                        Directory in which to dump extracted files
+  -S SUMMARY_FILE, --summary-file=SUMMARY_FILE
+                        File where to store summary information
+  -p PID, --pid=PID     Operate on these Process IDs (comma-separated)
+  -n, --name            Include extracted filename in output file path
+  -u, --unsafe          Relax safety constraints for more data
+  -F FILTER, --filter=FILTER
+                        Filters to apply (comma-separated)
+</code></pre>
+<h3 id="usage">Usage</h3>
+<pre><code>volatility -f memory.dump --profile=Win7SP1x86 dumpfiles -Q &lt;Offset&gt; -D &lt;dump folder&gt;
+</code></pre></p>
+    </article>
+</section>
+            <!-- endblock -->
+
+            <!-- block footer -->
+                <footer>
+    <div class="d-flex flex-sm-row justify-content-between py-2 border-top drac-text-black drac-bg-cyan-green">
+        <a href="https://github.com/dracula/mkdocs" target="_blank" style="padding-left: 1%;"
+            class="footer-text drac-anchor drac-text-black drac-text-purple--hover">
+            Made with Dracula Theme for MkDocs
+        </a>
+    </div>
+</footer>
+            <!-- endblock -->
+        </div>
+
+    </main>
+
+        <script>var base_url = '../../..';</script>
+        <script src="../../../assets/js/jquery-3.3.1.slim.min.js"></script>
+        <script src="../../../assets/js/bootstrap.bundle.min.js"></script>
+        <script src="../../../assets/js/mkdocs.js"></script>
+			<script src="https://fastly.jsdelivr.net/npm/jquery/dist/jquery.min.js" defer></script>
+			<script src="https://fastly.jsdelivr.net/npm/echarts/dist/echarts.min.js" defer></script>
+			<script src="../../../assets/javascripts/interactive_graph.js" defer></script>
+
+</body>
+
+</html>

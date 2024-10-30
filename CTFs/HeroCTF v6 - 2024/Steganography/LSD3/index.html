@@ -1,0 +1,671 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+        <title>LSD3 - CTF_info</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        
+        <link rel="canonical" href="https://nacrondx.github.io/ctf-info/CTFs/HeroCTF%20v6%20-%202024/Steganography/LSD3/">
+        
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="../../../../assets/css/darcula-highlight.min.css">
+
+        <link rel="stylesheet" href="../../../../assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../../../assets/css/dracula-ui.min.css">
+        <link rel="stylesheet" href="../../../../assets/css/mkdocs.min.css">
+            <link href="../../../../assets/stylesheets/interactive_graph.css" rel="stylesheet">
+
+        
+            <link  rel="icon" type="image/x-icon" href="../../../../assets/img/favicon.ico">
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+                <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+
+<body class="drac-bg-black-secondary drac-text-grey-ternary drac-text drac-scrollbar-purple">
+
+    <main class="d-flex">
+
+        <!-- block sidebar -->
+            <nav id="sidebar" class="sidebar drac-bg-black">
+    <div class="custom-menu">
+        <button type="button" id="sidebarCollapse" class="btn btn-primary">
+            <i class="fa fa-bars"></i>
+            <span class="sr-only">Menu</span>
+        </button>
+    </div>
+
+    <div class="p-4">
+        
+
+        <div class="drac-text-center">
+            
+                <span class="drac-text drac-line-height drac-text-white">CTF_info</span>
+            
+        </div>
+
+        <div class="drac-box flex-column">
+            <ul class="dot-ul">
+                <li><div class="dot-li drac-bg-cyan"></div></li>
+                <li><div class="dot-li drac-bg-green"></div></li>
+                <li><div class="dot-li drac-bg-orange"></div></li>
+                <li><div class="dot-li drac-bg-pink"></div></li>
+                <li><div class="dot-li drac-bg-purple"></div></li>
+                <li><div class="dot-li drac-bg-red"></div></li>
+                <li><div class="dot-li drac-bg-yellow"></div></li>
+            </ul>
+        </div>
+
+        <hr class="drac-divider" />
+
+        <!-- block menu -->
+        <ul class="mb-5 drac-list drac-list-none">
+            
+            <li class="drac-box">
+                <a href="../../../.."
+                    class="
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+                    Home
+                </a>
+            </li>
+            <li class="drac-box">
+                <a href="../../../../Tools/"
+                    class="
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+                    Tools
+                </a>
+            </li>
+            <li class="drac-box">
+                <a href="../../../.."
+                    class=" active 
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#ctfs-collapse" aria-expanded="false">
+                    CTFs
+                </a>
+                <div class="collapse" id="ctfs-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="#" class="
+            drac-anchor-secondary btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+            data-bs-toggle="collapse" data-bs-target="#heroctf-v6---2024-collapse" aria-expanded="false">
+            HeroCTF v6   2024
+        </a>
+
+        <div class="collapse" id="heroctf-v6---2024-collapse">
+            <ul class="mb-5 drac-list drac-list-none">
+                    
+    <li class="drac-box-ternary">
+        <a href="#" class="
+            drac-anchor-secondary btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+            data-bs-toggle="collapse" data-bs-target="#steganography-collapse" aria-expanded="false">
+            Steganography
+        </a>
+
+        <div class="collapse" id="steganography-collapse">
+            <ul class="mb-5 drac-list drac-list-none">
+                    
+    <li class="drac-box-ternary">
+        <a href="./"
+            class=" active 
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            LSD3
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../Zipper/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Zipper
+        </a>
+    </li>
+            </ul>
+        </div>
+    </li>
+            </ul>
+        </div>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../../../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#templates-collapse" aria-expanded="false">
+                    Templates
+                </a>
+                <div class="collapse" id="templates-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../../../Templates/Write%20up%20template/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Write up template
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../../../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#wiki-collapse" aria-expanded="false">
+                    Wiki
+                </a>
+                <div class="collapse" id="wiki-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../../../Wiki/Audacity/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Audacity
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../../../Wiki/Binwalk/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Binwalk
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../../../Wiki/Burp%20Suite/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Burp Suite
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../../../Wiki/Cookies/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Cookies
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../../../Wiki/Cross-Site%20Scripting%20%28XSS%29/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Cross Site Scripting (XSS)
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../../../Wiki/Deep%20Sound/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Deep Sound
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../../../Wiki/Exiftool/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Exiftool
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../../../Wiki/Fcrackzip/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Fcrackzip
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../../../Wiki/File%20Magic%20Numbers/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            File Magic Numbers
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../../../Wiki/File%20upload%20vulnerability/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            File upload vulnerability
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../../../Wiki/HowToLogin/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            HowToLogin
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../../../Wiki/ImageMagick/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            ImageMagick
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../../../Wiki/John%20The%20Ripper/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            John The Ripper
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../../../Wiki/Jsteg/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Jsteg
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../../../Wiki/Local%20File%20Inclusion/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Local File Inclusion
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../../../Wiki/PDFCrack/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            PDFCrack
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../../../Wiki/Pngcheck/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Pngcheck
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../../../Wiki/SQL%20Injection/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            SQL Injection
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../../../Wiki/Same%20Origin%20Policy/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Same Origin Policy
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../../../Wiki/Stegcracker/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Stegcracker
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../../../Wiki/Steghide/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Steghide
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../../../Wiki/Stegsnow/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Stegsnow
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../../../Wiki/Strings/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Strings
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../../../Wiki/Volatility/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Volatility
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../../../Wiki/WFuzz/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            WFuzz
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../../../Wiki/Wireshark/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Wireshark
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../../../Wiki/Zbarimg/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Zbarimg
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../../../Wiki/Zipography/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Zipography
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../../../Wiki/Zsteg/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Zsteg
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="#" class="
+            drac-anchor-secondary btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+            data-bs-toggle="collapse" data-bs-target="#volatility-plugins-collapse" aria-expanded="false">
+            Volatility Plugins
+        </a>
+
+        <div class="collapse" id="volatility-plugins-collapse">
+            <ul class="mb-5 drac-list drac-list-none">
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../../Wiki/Volatility%20Plugins/cmdscan/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Cmdscan
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../../Wiki/Volatility%20Plugins/consoles/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Consoles
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../../Wiki/Volatility%20Plugins/dumpfiles/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Dumpfiles
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../../Wiki/Volatility%20Plugins/envars/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Envars
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../../Wiki/Volatility%20Plugins/filescan/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Filescan
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../../Wiki/Volatility%20Plugins/hashdump/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Hashdump
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../../Wiki/Volatility%20Plugins/imageinfo/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Imageinfo
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../../Wiki/Volatility%20Plugins/pslist/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Pslist
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../../Wiki/Volatility%20Plugins/pstree/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Pstree
+        </a>
+    </li>
+            </ul>
+        </div>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="#" class="
+            drac-anchor-secondary btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+            data-bs-toggle="collapse" data-bs-target="#scripts-collapse" aria-expanded="false">
+            Scripts
+        </a>
+
+        <div class="collapse" id="scripts-collapse">
+            <ul class="mb-5 drac-list drac-list-none">
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../../Wiki/scripts/Hidded%20data%20in%20PNG%20IDAT%20chunk/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Hidded data in PNG IDAT chunk
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../../../../Wiki/scripts/Interactive%20shell%20php/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Interactive shell php
+        </a>
+    </li>
+            </ul>
+        </div>
+    </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        <!-- endblock -->
+    </div>
+</nav>
+        <!-- endblock -->
+
+        <nav class="divider drac-bg-purple-cyan"></nav>
+
+        <div class="content">
+            <!-- block header -->
+                <header>
+    <nav class="navbar navbar-expand-xl drac-bg-purple">
+        <div class="container-fluid">
+            
+            <button class="navbar-toggler w-100 text-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMenu"
+                aria-controls="navbarsMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse flex-column ml-auto" id="navbarsMenu">
+                <ul class="navbar-nav text-md-center">
+
+                    <!-- block preview -->
+                    <li class="nav-item">
+                            
+        <div class="container">
+            <div class="row row-preview">
+                <div class="col">
+                    <a href="../../../../Tools/"
+                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="../Zipper/"
+                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover" style="padding-left: 3%;">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block search -->
+                    <li class="nav-item">
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block source -->
+                    <li class="nav-item">
+                        
+                    </li>
+                    <!--  endblock -->
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</header>
+            <!-- endblock -->
+
+            <!-- block content -->
+                <section class="p-md-5 section-content">
+    <article>
+        <p><h3 id="description">Description</h3>
+<p>Don't try to throw random tools at this poor image. Go back to the basics and learn the detection techniques.</p>
+<p>Good luck!<br></p>
+<p>Format : <strong>Hero{}</strong><br> 
+Author : <strong>Thibz</strong></p>
+<h3 id="files">Files</h3>
+<p><a href="../../img/lsd3_secret.png">secret.png</a></p>
+<h3 id="write-up">Write up</h3>
+<p>This challenge is similar to last year's, but a little tougher.</p>
+<p>In order to solve this challenge, it is enough to look at the title to give us an interesting lead: the LSD (Least-Significant Bit).
+The description tells us that it is useless to launch automatic scripts and that we have to think about it, too bad.</p>
+<p>There is a fairly simple way to detect traces of LSB in an image. </p>
+<p>Some basics before going further. A colour image is made up of pixels. Each pixel is composed of three RGB layers for Red Green Blue. 
+In computing, each of the three layers is a value between 0 and 255. </p>
+<p><img alt="lsd3_pixels.jpg" src="../../img/lsd3_pixels.jpg" /></p>
+<p>Thus, to have a red pixel, the pixel must have the value (255,0,0) which could be translated as 100% red, 0% green and 0% blue. Yellow is a mixture of red and green. A yellow pixel will therefore have a value of (255,255,0) which is translated as : 100% red, 100% green and 0% blue.</p>
+<p>We also know that in computing, everything is binary. So a red pixel is coded like this: </p>
+<pre><code>R : (11111111)
+G : (00000000)
+B : (00000000)
+</code></pre>
+<p>What happens if we set the Least Significant Bit to 0 on the Red layer? </p>
+<p>Color with red value at 255 :
+<img alt="lsd3_FullRed.png" src="../../img/lsd3_FullRed.png" /></p>
+<p>Color with red value at 254 :
+<img alt="lsd3_LSBRed.png" src="../../img/lsd3_LSBRed.png" /></p>
+<p>The two colours are different but to the naked eye the two colours look identical. This is the principle on which the technique is based, we will hide our message in the least significant bits of an image. </p>
+<p>Now that we know how it works, let's look at how we can detect it. The aim is to make this normally invisible change much more visible to the naked eye. Filters exist to do exactly what we want. These filters will display the image according to the value of each of the 8 bits of each layer. </p>
+<p>I use <a href="https://www.aperisolve.com/">AperiSolve</a> which allows me to display the image according to the 16 filters displayed.</p>
+<p>The first filter on the blue layer : </p>
+<p><img alt="lsd3_diag_lsb.png" src="../../img/lsd3_diag_lsb.png" /></p>
+<p>Each of these images will keep one of the 8 bits of the blue layer while setting all others to 0. </p>
+<p>The top left image will keep only the least significant bit and set everything else to 0. We realise that a strange diagonale appears, just as if the least significant bits were not all the same on the blue layer... </p>
+<p>We just need to iterate over this diagonale and recover all the least significant bits of the blue layer.</p>
+<pre><code class="language-python">def stringToFile(string, dst):
+    file = open(dst, 'w')
+    file.write(string)
+    file.close()
+
+def binaryToString(binary):
+    return ''.join([chr(int(binary[i:i+8], 2)) for i in range(0, len(binary), 8)])
+
+def decode(src):
+    print(&quot;[-] Decoding... &quot;)
+
+    extracted_bin = &quot;&quot;
+    img = Image.open(src, 'r')
+
+    width, height = img.size
+    print(&quot;[-] Image size: {}x{}&quot;.format(width, height))
+    for x in range(0, 1500): # The diagonale has 1500 pixels
+        pixel = list(img.getpixel((x, x)))
+        # Pixel[2] is the blue plane
+        extracted_bin = extracted_bin + str((pixel[2] &amp; 1))
+
+    stringToFile(binaryToString(extracted_bin), &quot;extracted.txt&quot;)
+    print(&quot;[-] Message extracted !&quot;)
+    print(&quot;[-] Message saved as extracted.txt&quot;)
+
+</code></pre>
+<h3 id="flag">Flag</h3>
+<p><code>"Hero{L5B_D14G0N4L3}"</code></p></p>
+    </article>
+</section>
+            <!-- endblock -->
+
+            <!-- block footer -->
+                <footer>
+    <div class="d-flex flex-sm-row justify-content-between py-2 border-top drac-text-black drac-bg-cyan-green">
+        <a href="https://github.com/dracula/mkdocs" target="_blank" style="padding-left: 1%;"
+            class="footer-text drac-anchor drac-text-black drac-text-purple--hover">
+            Made with Dracula Theme for MkDocs
+        </a>
+    </div>
+</footer>
+            <!-- endblock -->
+        </div>
+
+    </main>
+
+        <script>var base_url = '../../../..';</script>
+        <script src="../../../../assets/js/jquery-3.3.1.slim.min.js"></script>
+        <script src="../../../../assets/js/bootstrap.bundle.min.js"></script>
+        <script src="../../../../assets/js/mkdocs.js"></script>
+			<script src="https://fastly.jsdelivr.net/npm/jquery/dist/jquery.min.js" defer></script>
+			<script src="https://fastly.jsdelivr.net/npm/echarts/dist/echarts.min.js" defer></script>
+			<script src="../../../../assets/javascripts/interactive_graph.js" defer></script>
+
+</body>
+
+</html>

@@ -1,0 +1,448 @@
+{
+  "nodes": [
+    {
+      "id": "0",
+      "name": "Home",
+      "symbolSize": 0,
+      "value": "/ctf-info/"
+    },
+    {
+      "id": "1",
+      "name": "Tools",
+      "symbolSize": 27,
+      "value": "/ctf-info/Tools/"
+    },
+    {
+      "id": "2",
+      "name": "LSD3",
+      "symbolSize": 0,
+      "value": "/ctf-info/CTFs/HeroCTF%20v6%20-%202024/Steganography/LSD3/"
+    },
+    {
+      "id": "3",
+      "name": "Zipper",
+      "symbolSize": 2,
+      "value": "/ctf-info/CTFs/HeroCTF%20v6%20-%202024/Steganography/Zipper/"
+    },
+    {
+      "id": "4",
+      "name": "Write up template",
+      "symbolSize": 0,
+      "value": "/ctf-info/Templates/Write%20up%20template/"
+    },
+    {
+      "id": "5",
+      "name": "Audacity",
+      "symbolSize": 1,
+      "value": "/ctf-info/Wiki/Audacity/"
+    },
+    {
+      "id": "6",
+      "name": "Binwalk",
+      "symbolSize": 2,
+      "value": "/ctf-info/Wiki/Binwalk/"
+    },
+    {
+      "id": "7",
+      "name": "Burp Suite",
+      "symbolSize": 3,
+      "value": "/ctf-info/Wiki/Burp%20Suite/"
+    },
+    {
+      "id": "8",
+      "name": "Cookies",
+      "symbolSize": 1,
+      "value": "/ctf-info/Wiki/Cookies/"
+    },
+    {
+      "id": "9",
+      "name": "Cross Site Scripting (XSS)",
+      "symbolSize": 0,
+      "value": "/ctf-info/Wiki/Cross-Site%20Scripting%20%28XSS%29/"
+    },
+    {
+      "id": "10",
+      "name": "Deep Sound",
+      "symbolSize": 1,
+      "value": "/ctf-info/Wiki/Deep%20Sound/"
+    },
+    {
+      "id": "11",
+      "name": "Exiftool",
+      "symbolSize": 1,
+      "value": "/ctf-info/Wiki/Exiftool/"
+    },
+    {
+      "id": "12",
+      "name": "Fcrackzip",
+      "symbolSize": 1,
+      "value": "/ctf-info/Wiki/Fcrackzip/"
+    },
+    {
+      "id": "13",
+      "name": "File Magic Numbers",
+      "symbolSize": 1,
+      "value": "/ctf-info/Wiki/File%20Magic%20Numbers/"
+    },
+    {
+      "id": "14",
+      "name": "File upload vulnerability",
+      "symbolSize": 3,
+      "value": "/ctf-info/Wiki/File%20upload%20vulnerability/"
+    },
+    {
+      "id": "15",
+      "name": "HowToLogin",
+      "symbolSize": 2,
+      "value": "/ctf-info/Wiki/HowToLogin/"
+    },
+    {
+      "id": "16",
+      "name": "ImageMagick",
+      "symbolSize": 1,
+      "value": "/ctf-info/Wiki/ImageMagick/"
+    },
+    {
+      "id": "17",
+      "name": "John The Ripper",
+      "symbolSize": 1,
+      "value": "/ctf-info/Wiki/John%20The%20Ripper/"
+    },
+    {
+      "id": "18",
+      "name": "Jsteg",
+      "symbolSize": 1,
+      "value": "/ctf-info/Wiki/Jsteg/"
+    },
+    {
+      "id": "19",
+      "name": "Local File Inclusion",
+      "symbolSize": 1,
+      "value": "/ctf-info/Wiki/Local%20File%20Inclusion/"
+    },
+    {
+      "id": "20",
+      "name": "PDFCrack",
+      "symbolSize": 1,
+      "value": "/ctf-info/Wiki/PDFCrack/"
+    },
+    {
+      "id": "21",
+      "name": "Pngcheck",
+      "symbolSize": 2,
+      "value": "/ctf-info/Wiki/Pngcheck/"
+    },
+    {
+      "id": "22",
+      "name": "SQL Injection",
+      "symbolSize": 2,
+      "value": "/ctf-info/Wiki/SQL%20Injection/"
+    },
+    {
+      "id": "23",
+      "name": "Same Origin Policy",
+      "symbolSize": 1,
+      "value": "/ctf-info/Wiki/Same%20Origin%20Policy/"
+    },
+    {
+      "id": "24",
+      "name": "Stegcracker",
+      "symbolSize": 1,
+      "value": "/ctf-info/Wiki/Stegcracker/"
+    },
+    {
+      "id": "25",
+      "name": "Steghide",
+      "symbolSize": 1,
+      "value": "/ctf-info/Wiki/Steghide/"
+    },
+    {
+      "id": "26",
+      "name": "Stegsnow",
+      "symbolSize": 1,
+      "value": "/ctf-info/Wiki/Stegsnow/"
+    },
+    {
+      "id": "27",
+      "name": "Strings",
+      "symbolSize": 1,
+      "value": "/ctf-info/Wiki/Strings/"
+    },
+    {
+      "id": "28",
+      "name": "Volatility",
+      "symbolSize": 10,
+      "value": "/ctf-info/Wiki/Volatility/"
+    },
+    {
+      "id": "29",
+      "name": "WFuzz",
+      "symbolSize": 1,
+      "value": "/ctf-info/Wiki/WFuzz/"
+    },
+    {
+      "id": "30",
+      "name": "Wireshark",
+      "symbolSize": 1,
+      "value": "/ctf-info/Wiki/Wireshark/"
+    },
+    {
+      "id": "31",
+      "name": "Zbarimg",
+      "symbolSize": 1,
+      "value": "/ctf-info/Wiki/Zbarimg/"
+    },
+    {
+      "id": "32",
+      "name": "Zipography",
+      "symbolSize": 2,
+      "value": "/ctf-info/Wiki/Zipography/"
+    },
+    {
+      "id": "33",
+      "name": "Zsteg",
+      "symbolSize": 1,
+      "value": "/ctf-info/Wiki/Zsteg/"
+    },
+    {
+      "id": "34",
+      "name": "Cmdscan",
+      "symbolSize": 1,
+      "value": "/ctf-info/Wiki/Volatility%20Plugins/cmdscan/"
+    },
+    {
+      "id": "35",
+      "name": "Consoles",
+      "symbolSize": 1,
+      "value": "/ctf-info/Wiki/Volatility%20Plugins/consoles/"
+    },
+    {
+      "id": "36",
+      "name": "Dumpfiles",
+      "symbolSize": 1,
+      "value": "/ctf-info/Wiki/Volatility%20Plugins/dumpfiles/"
+    },
+    {
+      "id": "37",
+      "name": "Envars",
+      "symbolSize": 1,
+      "value": "/ctf-info/Wiki/Volatility%20Plugins/envars/"
+    },
+    {
+      "id": "38",
+      "name": "Filescan",
+      "symbolSize": 1,
+      "value": "/ctf-info/Wiki/Volatility%20Plugins/filescan/"
+    },
+    {
+      "id": "39",
+      "name": "Hashdump",
+      "symbolSize": 1,
+      "value": "/ctf-info/Wiki/Volatility%20Plugins/hashdump/"
+    },
+    {
+      "id": "40",
+      "name": "Imageinfo",
+      "symbolSize": 1,
+      "value": "/ctf-info/Wiki/Volatility%20Plugins/imageinfo/"
+    },
+    {
+      "id": "41",
+      "name": "Pslist",
+      "symbolSize": 1,
+      "value": "/ctf-info/Wiki/Volatility%20Plugins/pslist/"
+    },
+    {
+      "id": "42",
+      "name": "Pstree",
+      "symbolSize": 1,
+      "value": "/ctf-info/Wiki/Volatility%20Plugins/pstree/"
+    },
+    {
+      "id": "43",
+      "name": "Hidded data in PNG IDAT chunk",
+      "symbolSize": 1,
+      "value": "/ctf-info/Wiki/scripts/Hidded%20data%20in%20PNG%20IDAT%20chunk/"
+    },
+    {
+      "id": "44",
+      "name": "Interactive shell php",
+      "symbolSize": 1,
+      "value": "/ctf-info/Wiki/scripts/Interactive%20shell%20php/"
+    }
+  ],
+  "links": [
+    {
+      "source": "1",
+      "target": "7"
+    },
+    {
+      "source": "1",
+      "target": "15"
+    },
+    {
+      "source": "1",
+      "target": "29"
+    },
+    {
+      "source": "1",
+      "target": "8"
+    },
+    {
+      "source": "1",
+      "target": "14"
+    },
+    {
+      "source": "1",
+      "target": "19"
+    },
+    {
+      "source": "1",
+      "target": "23"
+    },
+    {
+      "source": "1",
+      "target": "30"
+    },
+    {
+      "source": "1",
+      "target": "28"
+    },
+    {
+      "source": "1",
+      "target": "21"
+    },
+    {
+      "source": "1",
+      "target": "32"
+    },
+    {
+      "source": "1",
+      "target": "16"
+    },
+    {
+      "source": "1",
+      "target": "33"
+    },
+    {
+      "source": "1",
+      "target": "18"
+    },
+    {
+      "source": "1",
+      "target": "26"
+    },
+    {
+      "source": "1",
+      "target": "11"
+    },
+    {
+      "source": "1",
+      "target": "25"
+    },
+    {
+      "source": "1",
+      "target": "6"
+    },
+    {
+      "source": "1",
+      "target": "27"
+    },
+    {
+      "source": "1",
+      "target": "31"
+    },
+    {
+      "source": "1",
+      "target": "17"
+    },
+    {
+      "source": "1",
+      "target": "24"
+    },
+    {
+      "source": "1",
+      "target": "12"
+    },
+    {
+      "source": "1",
+      "target": "20"
+    },
+    {
+      "source": "1",
+      "target": "5"
+    },
+    {
+      "source": "1",
+      "target": "10"
+    },
+    {
+      "source": "1",
+      "target": "13"
+    },
+    {
+      "source": "3",
+      "target": "6"
+    },
+    {
+      "source": "3",
+      "target": "32"
+    },
+    {
+      "source": "14",
+      "target": "7"
+    },
+    {
+      "source": "14",
+      "target": "44"
+    },
+    {
+      "source": "15",
+      "target": "22"
+    },
+    {
+      "source": "21",
+      "target": "43"
+    },
+    {
+      "source": "22",
+      "target": "7"
+    },
+    {
+      "source": "28",
+      "target": "40"
+    },
+    {
+      "source": "28",
+      "target": "41"
+    },
+    {
+      "source": "28",
+      "target": "42"
+    },
+    {
+      "source": "28",
+      "target": "34"
+    },
+    {
+      "source": "28",
+      "target": "35"
+    },
+    {
+      "source": "28",
+      "target": "38"
+    },
+    {
+      "source": "28",
+      "target": "36"
+    },
+    {
+      "source": "28",
+      "target": "37"
+    },
+    {
+      "source": "28",
+      "target": "39"
+    }
+  ]
+}
